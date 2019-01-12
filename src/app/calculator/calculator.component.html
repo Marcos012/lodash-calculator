@@ -1,0 +1,12 @@
+<input type="text" #newNumber>
+<input type="text" #newNumberTwo>
+<button (click)='addNumber(newNumber.value)'>add</button>
+
+<button (click)='sum()'>somar</button>
+<button (click)='subtract(newNumber.value, newNumberTwo.value)'>subtrair</button>
+<button (click)='divide(newNumber.value, newNumberTwo.value)'>dividir</button>
+<button (click)='multiply(newNumber.value, newNumberTwo.value)'>multiplicar</button>
+<div>
+    <span>resultado: </span>
+    <p>{{result}}</p>
+</div>
